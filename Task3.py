@@ -13,3 +13,20 @@ for i in range(n):
     num = random.uniform(1, 100)
     lst.append(num)
 print(lst)
+
+# Создаю новый список из элементов с остатком от деления на единицу
+new_lst=[i%1 for i in lst]
+# print(new_lst)
+
+# Максимальное значение в списке
+max_value = max(new_lst)
+# print(max_value)
+
+# Минимальное значение в списке
+min_value = min(new_lst)
+# print(min_value)
+
+# Разница максимального и минимального значений
+different = max_value - min_value
+print('Разница между максимальным и минимальным значением дробной части элементов:')
+print(different)
